@@ -139,7 +139,7 @@ def match_bboxes(
                 # If there is a matching bbox found above, increase the count of true positives by one (TP).
                 true_positives[true_class] += 1
                 # Inverse indexe of predicted boxes here to keep the order of original (unsorted) bboxes
-                true_positive_indexes.append((rorder[ri], ci))
+                true_positive_indexes.append((order[ri], ci))
             else:
                 # If classes does not match, then we add false-positive for predicted class and
                 # false-negative to target class
